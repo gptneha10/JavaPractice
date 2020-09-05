@@ -9,9 +9,10 @@ def app
         app=docker.build('/Users/ngupta33/Documents/github/JavaPractice1')
     }
 
+
     stage('Test Image'){
         app.inside{
-        sh 'echo "Test Passed"'
+        sh 'echo "Test Passedd"'
         }
     }
 
