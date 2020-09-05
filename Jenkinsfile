@@ -1,4 +1,8 @@
-node{
+pipeline{
+
+agent none
+
+stages{
 def app
 
     stage('Clone Repository'){
@@ -21,5 +25,6 @@ def app
         app.push("$(env.BUILD_NUMBER)")
         app.push("latest")
         }
+    }
     }
 }
